@@ -1,13 +1,12 @@
 <template>
     <header class="bg-white">
-        <div class="container d-flex justify-content-between mt-3 ">
+        <div class="container d-flex justify-content-between mt-3 mb-3  ">
             <img src="/img/dc-logo.png" alt="Logo DC comics">
             <ul class="d-flex align-items-center list-unstyled gap-3">
                 <li v-for="(item, index) in menu" :key="index">
-                    <a class="text-decoration-none text-uppercase text-secondary " :href="item.url">{{ item.title }}</a>
+                    <a class="text-decoration-none text-uppercase" :href="item.url">{{ item.title }}</a>
                 </li>
             </ul>
-
         </div>
     </header>
 </template>
@@ -65,4 +64,15 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
+
+a {
+    color: gray;
+
+    &:hover {
+        color: $azure;
+    }
+
+}
+</style>
