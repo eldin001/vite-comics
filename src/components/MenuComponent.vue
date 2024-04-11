@@ -1,11 +1,12 @@
 <template>
-    <footer>     
-    </footer>
+    <div>
+
+    </div>
 </template>
 
 <script>
     export default {
-        name: 'FooterComponent'
+        name: 'MenuComponent'
     }
 </script>
 

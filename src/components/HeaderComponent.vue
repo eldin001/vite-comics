@@ -69,10 +69,16 @@ export default {
 
 a {
     color: gray;
+    height: 100%;
 
     &:hover {
         color: $azure;
     }
+}
 
+
+
+li:hover {
+    border-bottom: 5px solid $azure;
 }
 </style>
